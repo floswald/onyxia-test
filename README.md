@@ -48,13 +48,19 @@ Under "Service Catalog", select the `Rstudio` service.
 
 - Under `Docker image`, select `Custom image`, and add the path of your new container (`yourspace/image-name:image-tag`).
 - Under `Vault`, add the "path" to your "secret"  in the field `Secret`, e.g., `Stata`. This makes all variables under that secret available to the service.
+- Under `Init`, in the "User initialization script" field, add the raw URL to the initialization script:
+  ```
+  https://raw.githubusercontent.com/larsvilhuber/onyxia-test/main/init.sh
+  ```
+  This script will automatically configure the Stata license when the service starts.
 
 You can optionally rename and save this configuration.
 
-### Launch the service.
+### Launch the service
 
-Then launch the service. Once logged in, open a terminal in Rstudio, and run
+Then launch the service. The Stata license will be automatically configured on startup using the initialization script.
 
+**Note**: If you need to manually reconfigure the license, you can still run:
 ```bash
-/home/onyxia/work/statalic.sh
+/usr/local/stata/statalic.sh
 ```
