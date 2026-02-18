@@ -48,7 +48,7 @@ Under "Service Catalog", select the `Rstudio` service.
 
 - Under `Docker image`, select `Custom image`, and add the path of your new container (`yourspace/image-name:image-tag`).
 - Under `Vault`, add the "path" to your "secret"  in the field `Secret`, e.g., `Stata`. This makes all variables under that secret available to the service.
-- Under `Init`, in the "User initialization script" field, add the raw URL to the initialization script:
+- Under `Init`, in the "User initialization script" field, add the raw URL to the initialization script. Replace `main` with your branch name if different:
   ```
   https://raw.githubusercontent.com/larsvilhuber/onyxia-test/main/init.sh
   ```
