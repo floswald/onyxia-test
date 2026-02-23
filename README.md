@@ -64,3 +64,12 @@ Then launch the service. The Stata license will be automatically configured on s
 ```bash
 /usr/local/stata/statalic.sh
 ```
+
+
+## Dropbox -> S3 data transfer
+
+This image includes a simple bash function which serves to directly stream (large) files from a dropbox link into the S3 storage on your onyxia account:
+
+```bash
+dropbox_to_s3 "https://www.dropbox.com/s/xxx/file.zip" "uploads/20241435/file.zip"
+```
