@@ -30,4 +30,7 @@ COPY statalic.sh /usr/local/stata/
 RUN chmod +x /usr/local/stata/statalic.sh \
     && chmod a+rwX /usr/local/stata 
 
+# Add dropbox_to_s3 utility
+COPY dropbox_to_s3.sh /usr/local/bin/dropbox_to_s3
+RUN chmod +x /usr/local/bin/dropbox_to_s3
 
