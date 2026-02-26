@@ -1,2 +1,4 @@
 #!/bin/bash
-matlab -vnc
+
+matlab -vnc &
+tail -f /dev/null
