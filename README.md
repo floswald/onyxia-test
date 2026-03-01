@@ -73,3 +73,20 @@ This image includes a simple bash function which serves to directly stream (larg
 ```bash
 dropbox_to_s3 "https://www.dropbox.com/s/xxx/file.zip" "uploads/20241435/file.zip"
 ```
+
+
+## MATLAB
+
+* matlab toolboxes list: https://github.com/mathworks-ref-arch/matlab-dockerfile/blob/main/mpm-input-files/R2025b/mpm_input_r2025b.txt
+* matlab on SSPcloud uses a custom image which has toolboxes pre-installed. currently I have
+  ```
+  Statistics_and_Machine_Learning_Toolbox \
+    Optimization_Toolbox \
+    Global_Optimization_Toolbox \
+    Econometrics_Toolbox \
+    Parallel_Computing_Toolbox \
+    Signal_Processing_Toolbox \
+    Symbolic_Math_Toolbox \
+    Curve_Fitting_Toolbox \
+    Financial_Toolbox
+  ```
