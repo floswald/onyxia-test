@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: matlab
-        image: floswald/matlab-licensed:r2025b
+        image: mathworks/matlab:r2025b
         args: ["-browser"]
         ports:
         - containerPort: 8888
