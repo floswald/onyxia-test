@@ -1,4 +1,3 @@
 #!/bin/bash
-
-matlab -vnc &
-tail -f /dev/null
+mc cp s3/floswald/matlab.yaml ~/work/matlab.yaml
+kubectl apply -f ~/work/matlab.yaml
